@@ -1,0 +1,95 @@
+ /**个人原创: Cover用于遮罩层, 
+ 利用CSS绝对定位, top值由0变为屏幕高度(由JS得到), 
+ 变化过程运用CSS3 transition, 达到"拉开幕布"的动画效果**/
+ 
+ .container {
+     overflow: hidden;
+     //cover层通过绝对定位跑到屏幕下方时, 超出了屏幕范围, 隐藏起来
+ }
+ 
+ .cover {
+     background-color: #fff;
+     position: absolute;
+     top: 0;
+     left: 0;
+     height: 1000px;
+     width: 100%;
+     transition: all 2s ease-in;
+     z-index: 99;
+ }
+ 
+ .dmArea {
+     border: 1px solid #1387CE;
+     width: 100%;
+     margin-top: 30px;
+     position: relative;
+     overflow: hidden;
+     box-shadow: 3px 5px 20px #333;
+ }
+ 
+ .ctrl {
+     width: 100%;
+     margin: 2em auto;
+     text-align: center;
+ }
+ 
+ .form-control {
+     width: auto !important;
+ }
+ 
+ .noBorderRds,
+ .dropdown-toggle {
+     border-radius: 0 !important;
+ }
+ 
+ .ipt-ctrl {
+     margin: 1em auto;
+ }
+ 
+ .dropdown-menu {
+     min-width: 80px;
+ }
+ 
+ .dropdown-menu a:hover {
+     background-color: pink !important;
+ }
+ 
+ .selected {
+     background-color: #FFFF80;
+     color: #337AB7 !important;
+     font-weight: bold !important;
+ }
+ 
+ @media screen and (max-width:500px) {
+     .fstIptGp {
+         width: 100% !important;
+         padding-bottom: 20px !important;
+         margin-bottom: 20px !important;
+         display: block !important;
+     }
+ }
+ 
+ .moveToLeft {
+     animation: moveToLeft 10s ease-in infinite;
+     -webkit-animation: moveToLeft 10s ease-in infinite;
+     /*Safari and Chrome*/
+ }
+ 
+ @keyframes moveToLeft {
+     from {
+         left: 0px;
+     }
+     to {
+         left: 100%;
+     }
+ }
+ /*Safari and Chrome*/
+ 
+ @-webkit-keyframes moveToLeft {
+     from {
+         left: 0px;
+     }
+     to {
+         left: 100%;
+     }
+ }
