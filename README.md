@@ -1,4 +1,4 @@
-#DANMU
+# DANMU
 
 "Danmu Wall" (also known as Bullet Screen) is an intersting phenomenon in several video websites such as bilibili.com in China, this demo was a simple implemention of such function, in which several popular "Tu Cao" (splitslots) were collected and quoted from the websites.
 
