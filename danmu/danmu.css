@@ -1,0 +1,154 @@
+ /**个人原创: Cover用于遮罩层,
+ 利用CSS绝对定位, top值由0变为屏幕高度(由JS得到),
+ 变化过程运用CSS3 transition, 达到"拉开幕布"的动画效果**/
+ 
+ .container {
+     background: transparent;
+     overflow: hidden;
+     /**cover层通过绝对定位跑到屏幕下方时, 超出了屏幕范围, 隐藏起来**/
+ }
+ 
+ .cover {
+     background-color: #fff;
+     position: absolute;
+     top: 0;
+     left: 0;
+     height: 1000px;
+     width: 100%;
+     transition: all 2s ease-in;
+     z-index: 99;
+ }
+ 
+ .dmArea {
+     background: transparent;
+     border: 1px solid #1387CE;
+     width: 100%;
+     margin-top: 30px;
+     position: relative;
+     overflow: hidden;
+ }
+ 
+ .ctrl {
+     width: 100%;
+     margin: 2em auto;
+     text-align: center;
+ }
+ 
+ .form-control {
+     width: auto !important;
+ }
+ 
+ .noBorderRds,
+ .dropdown-toggle {
+     border-radius: 0 !important;
+ }
+ 
+ .ipt-ctrl {
+     margin: 1em auto;
+ }
+ 
+ .dropdown-menu {
+     min-width: 80px;
+ }
+ 
+ .dropdown-menu a:hover {
+     background-color: pink !important;
+ }
+ 
+ .selected {
+     background-color: #66FFCC;
+     color: #337AB7 !important;
+     font-weight: bold !important;
+ }
+ 
+ .btn-margin {
+     margin-right: 1em;
+ }
+ 
+ .footer {
+     font-size: 1em;
+     text-align: center;
+ }
+ 
+ .footer a {
+     text-decoration: none;
+ }
+ 
+ @media screen and (max-width:410px) {
+     .fstBtn {
+         width: 100% !important;
+         margin-bottom: 6px !important;
+         display: block !important;
+     }
+     .fstIpt {
+         width: 100% !important;
+         margin-bottom: 10px !important;
+         display: block !important;
+     }
+     .dmArea {
+         margin-top: 10px;
+     }
+     .dropdown-menu {
+         min-width: 100%;
+         text-align: center;
+     }
+ }
+ 
+ @media screen and (min-width:411px) and (max-width:600px) {
+     .fstBtn {
+         margin-bottom: 10px !important;
+     }
+     .fstIpt {
+         margin-bottom: 10px !important;
+     }
+ }
+ 
+ .moveToLeft {
+     animation: moveToLeft 10s ease-in infinite;
+     -webkit-animation: moveToLeft 10s ease-in infinite;
+     /*Safari and Chrome*/
+ }
+ 
+ @keyframes moveToLeft {
+     from {
+         left: 0;
+     }
+     to {
+         left: 90%;
+     }
+ }
+ /*Safari and Chrome*/
+ 
+ @-webkit-keyframes moveToLeft {
+     from {
+         left: 0;
+     }
+     to {
+         left: 90%;
+     }
+ }
+ 
+ .breathLight {
+     animation: breathLight 10s ease-in infinite;
+     -webkit-animation: breathLight 10s ease-in infinite;
+     /*Safari and Chrome*/
+ }
+ 
+ @keyframes breathLight {
+     from {
+         box-shadow: 3px 5px 20px #333;
+     }
+     to {
+         box-shadow: 5px 10px 30px #48e0d3;
+     }
+ }
+ /*Safari and Chrome*/
+ 
+ @-webkit-keyframes breathLight {
+     from {
+         box-shadow: 3px 5px 20px #333;
+     }
+     to {
+         box-shadow: 5px 10px 30px #48e0d3;
+     }
+ }
