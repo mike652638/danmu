@@ -37,4 +37,4 @@ This Demo is very simple since it's one of my practicing projects when learning 
 
 这个小页面是我自学前端时实践的一个小项目, 实现起来并不难, 您可以进入<a href ="https://www.mike652638.com/demo/danmu.html">我的网站DEMO展示页-弹幕墙<a/>查看在线效果, 随时欢迎您提出任何问题,建议或反馈 :) 
 
-<a target="_blank" href = "https://www.mike652638.com/demo/danmu.html"><img src="https://www.mike652638.com/demo/danmu/screenshots/danmuScrSht-pc.jpg" alt="danmu-screenshot" /></a>
+<a target="_blank" href = "https://www.mike652638.com/demo/danmu.html"><img src="https://www.mike652638.com/demo/danmu/scrShts/danmuScrSht-pc.png" alt="danmu-screenshot" /></a>
