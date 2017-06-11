@@ -74,35 +74,6 @@
      text-decoration: none;
  }
  
- @media screen and (max-width:410px) {
-     .fstBtn {
-         width: 100% !important;
-         margin-bottom: 6px !important;
-         display: block !important;
-     }
-     .fstIpt {
-         width: 100% !important;
-         margin-bottom: 10px !important;
-         display: block !important;
-     }
-     .dmArea {
-         margin-top: 10px;
-     }
-     .dropdown-menu {
-         min-width: 100%;
-         text-align: center;
-     }
- }
- 
- @media screen and (min-width:411px) and (max-width:600px) {
-     .fstBtn {
-         margin-bottom: 10px !important;
-     }
-     .fstIpt {
-         margin-bottom: 10px !important;
-     }
- }
- 
  .moveToLeft {
      animation: moveToLeft 10s ease-in infinite;
      -webkit-animation: moveToLeft 10s ease-in infinite;
@@ -150,5 +121,34 @@
      }
      to {
          box-shadow: 5px 10px 30px #48e0d3;
+     }
+ }
+
+@media screen and (min-width:411px) and (max-width:600px) {
+     .fstBtn {
+         margin-bottom: 10px !important;
+     }
+     .fstIpt {
+         margin-bottom: 10px !important;
+     }
+ }
+
+ @media screen and (max-width:410px) {
+     .fstBtn {
+         width: 100% !important;
+         margin-bottom: 6px !important;
+         display: block !important;
+     }
+     .fstIpt {
+         width: 100% !important;
+         margin-bottom: 10px !important;
+         display: block !important;
+     }
+     .dmArea {
+         margin-top: 10px;
+     }
+     .dropdown-menu {
+         min-width: 100%;
+         text-align: center;
      }
  }
