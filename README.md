@@ -6,7 +6,7 @@ Main Functions/Features:
 
 1.Splitslots can be either typed freely in the input box or selected from "Fast Input" with several popular splitslots by default, after inputting or selecting a splitslot, you can click "Send" button to launch it to the wall, as a special case, if you hit the "SEND" button while the input box is empty, the placeholder "I wanna comment ..." will be launched directly;
 
-2.By default the splitslots are in random "font-sizes" and "colors" when launched, you can also click the buttons "字号" and "颜色" to choose a specific "font-size" and "color" seperately as you like;
+2.By default the splitslots are in random "font-sizes" and "colors" when launched, you can also click the buttons "Font-size" and "Font-color" to choose a specific "font-size" and "color" seperately as you like;
 
 3.Once a new splitslot was sent to the wall, it will move from the left side to the right side on the wall repeatedly, this was achieved mainly by CSS3 animations feature;
 
