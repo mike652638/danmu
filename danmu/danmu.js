@@ -52,8 +52,7 @@ $(document).ready(function() {
         var paraNode = document.createElement("div");
         var pareToTop;
 
-        //小技巧: 如果当前弹幕输入框中没有内容,
-        //点击发射按钮的话, 就直接将placeholder中的内容发送到弹幕墙
+        //小技巧: 如果当前弹幕输入框中没有内容, 点击发射按钮的话, 就直接将placeholder中的内容发送到弹幕墙
         if (dmTxt.length === 0) {
             dmTxt = $("#dmTxt").attr("placeholder");
         }
